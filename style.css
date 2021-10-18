@@ -48,20 +48,17 @@ table {
 }
 
 .container{
-    background-color: #1C0C5B;
+    background-color: #C996CC;
     
 }
 
 body{
     font:16px/28px arial, sans-serif;
-    color: #b8b1d4;
-    
-    
+    color: #b8b1d4;  
 }
 
 .header .judul {
-  
-    font-size: 35px;
+    font-size: 100px;
     text-align: center;
     padding-top: 50px;
     color: #1C0C5B;
@@ -73,37 +70,38 @@ body{
     height: 250px;
     background-image: url(gambar/bg.png);
     background-size: cover;
-    background-position: 0 -350px;
-    border-bottom: 3px solid #1C0C5B;
+    background-position: 0 -330px;
 }
 
 .content {
     background-color: #C996CC;
-    height: 400px;
-    border-bottom: 3px solid #1C0C5B;
+    height: 850px;
+    
     color: #ddd4e7;
-  
-    
-    
-}   
-
+}
 .footer {
     background-color: #08031b;
     height: 39px;
 }
 
-.tulisan {
-    background-color: #916BBF;
+.tengah{
     width: 1100px;
-    height: 400px;
+    height: 850px;
     margin: auto;
-    border-left: 3px solid  #1C0C5B ;
-    border-right: 3px solid  #1C0C5B ;
+    border-left: 5px solid  #1C0C5B ;
+    border-right: 5px solid  #1C0C5B ;
     text-align: justify;
-    
+    background-color: #916BBF; 
 }
 
-.tulisan h1 {
+.tengah .main {
+    border-right: 5px solid  #1C0C5B ;
+    width: 700px;
+    float: left;
+    height: 850px;
+}
+
+.main h1 {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -111,12 +109,11 @@ body{
     padding-bottom: 35px;
 }
 
-.tulisan p {
+.main p {
     padding-left: 35px;
     padding-right: 35px;
     padding-top: 20px;
     font-size: 18px;
-
 }
 
 .footer .copyright {
@@ -125,29 +122,91 @@ body{
     padding-top: 5px;
 }
 
-.tulisan ul li a {
-    text-decoration: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #08031b;
-    font-size: 16px;
-}
-
-.tulisan ul li{
-    
+.navigasi ul li  {
     display: inline-block;
-    padding-top: 50px;
+    padding: 5px;
+    padding-right: 30px;
+    padding-left: 20px;
     
 }
 
-  
+.navigasi ul {
+    padding-left: 10px;
+    padding-top: 8px;
+    
+}
 
-.navigasi {
-    text-align: center;
+.navigasi ul li a {
+    
+    text-decoration: none;
+    color: #a198c2;
+    font-size: 20px;
 }
 
 .navigasi ul li a:hover{
+    background-color: #1e114e;
     color: white;
-    background-color: #1C0C5B;
 }
 
+.navigasi {
+    height: 60px;
+    background-color: #08031b;
+}
+
+.sidebar {
+  width: 360px;
+  float: right;
+  padding-right: 18px;
+  padding-top: 30px;
+}
+
+.sidebar h3 {
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.sidebar img {
+    float: left;
+    padding-right: 10px;
+}
+
+.sidebar p {
+   line-height: 25px;
+}
+
+.sidebar ul li {
+    display: inline-block;
+}
+
+.sidebar, .follow{
+    padding-top: 50px;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }
